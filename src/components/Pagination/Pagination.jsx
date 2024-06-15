@@ -10,7 +10,7 @@ const Pagination = ()=>{
     
 
     const onNextClick = ()=>{
-        setCurrentPage((prev)=>Math.min(prev+1, Math.ceil(employeeData.length/rowsPerPage)))
+        setCurrentPage((prev)=>prev+1)
     }
 
     const onPrevClick = ()=>{
