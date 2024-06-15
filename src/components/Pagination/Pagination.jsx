@@ -64,7 +64,7 @@ const Pagination = ()=>{
             </table>
             <div className={styles.pagination_controls}>
                 <button className={styles.btn} onClick={onPrevClick} disabled={currentPage===1}>Previous</button>
-                <button className={`${styles.middle_btn}`}><span>{currentPage}</span></button>
+                <span className={`${styles.middle_btn}`}>{currentPage}</span>
                 <button className={styles.btn} onClick={onNextClick} disabled={currentPage===Math.ceil(employeeData.length/rowsPerPage)}>Next</button>
             </div>
         </div>
